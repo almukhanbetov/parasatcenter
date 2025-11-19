@@ -64,21 +64,13 @@
                      В Центре, за время начала деятельности, всего прошло обучение более 5000 слушателей из различных регионов Казахстана.
 
                     </div>
-
-
-
-
-
                 </div>
             </div>
-        </div>
-        
+        </div>        
     </div>
-
     <div class="text-center mt-5">
                 <h6 class="text-primary">Наши партнеры</h1>
     </div>
-
     <div class="container-fluid color-cer p-3">
             <div class="row g-5 justify-content-center mt-2">
                 <div class="col-md-2  wow fadeIn" data-wow-delay="0.1s">

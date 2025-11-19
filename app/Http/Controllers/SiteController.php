@@ -27,7 +27,10 @@ class SiteController extends Controller
 
         return view('site.service', compact('services'));
     }
-
+    public function serviceDesc($id){
+        $service = Service::find($id);
+        return view("site.service-details", compact('service'));
+    }
     public function course()
     {
         $courses = Course::all();

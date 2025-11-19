@@ -29,8 +29,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Описание</label>
-                                <textarea id="summernote" class="form-control" rows="4" name="desc" placeholder="Описание"
-                                    >{{ $course->desc }}"</textarea>
+                                <textarea id="summernote" class="form-control" rows="4" name="desc" placeholder="Описание">{{ $course->desc }}"</textarea>
                                 @error('desc')
                                     <strong style="color: #d9534f">{{ $message }}</strong>
                                 @enderror

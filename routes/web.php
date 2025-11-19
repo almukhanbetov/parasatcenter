@@ -19,7 +19,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/about', [SiteController::class, 'about'])->name('site.about');
 Route::get('/service', [SiteController::class, 'service'])->name('site.service');
-Route::get('/service/{category}', [SiteController::class, 'serviceCategory'])->name('site.service.category');
+Route::get('/site/service/{service}', [SiteController::class, 'serviceDesc'])->name('site.service.desc');
 Route::get('/course/{kind}', [SiteController::class, 'courseKind'])->name('site.course.kind');
 Route::get('/course', [SiteController::class, 'course'])->name('site.course');
 Route::get('/contact', [SiteController::class, 'contact'])->name('site.contact');

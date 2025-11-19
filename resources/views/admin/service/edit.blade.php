@@ -30,7 +30,7 @@
                             <div class="form-group">
                                 <label>Описание</label>
                                 <textarea id="summernote" class="form-control" rows="4" name="desc" placeholder="Описание"
-                                    value="{{ $service->desc }}"></textarea>
+                                    >{{ $service->desc }}</textarea>
                                 @error('desc')
                                     <strong style="color: #d9534f">{{ $message }}</strong>
                                 @enderror

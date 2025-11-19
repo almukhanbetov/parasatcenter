@@ -20,13 +20,13 @@
                                 <h5 class="fw-semibold mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 1rem;">
                                     {{ \Illuminate\Support\Str::words($service->name, 8, '...') }}
                                 </h5>
-                                <a href="{{ route('site.service.category', $service) }}"
+                                <a href="{{ route('site.service.desc', $service) }}"
                                     class="btn btn-outline-light btn-sm px-3 py-2 rounded-pill fw-medium"
                                     style="transition: all 0.3s ease; text-shadow:
                        0 0 2px rgba(0,0,0,0.7),
                        0 0 4px rgba(0,0,0,0.7),
                        0 2px 4px rgba(0,0,0,0.5);">
-                                    <a href="">Подробнее</a> <i class="fa fa-arrow-right ms-1"></i>
+                                    Подробнее<i class="fa fa-arrow-right ms-1"></i>
                                 </a>
                             </div>
                         </div>
