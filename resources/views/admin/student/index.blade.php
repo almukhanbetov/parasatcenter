@@ -67,15 +67,8 @@
                                 </td>                              
                                 <td>
                                      {{ $student->firm_id ?? '' }}
-                                </td>                               
-                                <td>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <img alt="Avatar" class="table-avatar"
-                                                src="{{ asset('/storage/students/' . $student->image) }}" width="90">
-                                        </li>
-                                    </ul>
-                                </td>
+                                </td>                              
+                               
                                 <td class="project-actions text-right">
                                     <a class="btn btn-primary btn-sm" href="{{ route('admin.student.view', $student) }}">
                                         <i class="fas fa-folder">
