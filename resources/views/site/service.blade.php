@@ -26,7 +26,7 @@
                        0 0 2px rgba(0,0,0,0.7),
                        0 0 4px rgba(0,0,0,0.7),
                        0 2px 4px rgba(0,0,0,0.5);">
-                                    Подробнее <i class="fa fa-arrow-right ms-1"></i>
+                                    <a href="">Подробнее</a> <i class="fa fa-arrow-right ms-1"></i>
                                 </a>
                             </div>
                         </div>
