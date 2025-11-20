@@ -21,19 +21,21 @@ class SiteController extends Controller
     {
         return view('site.about');
     }
-     public function service()
+    public function service()
     {
-        $services = Service::all();      
+        $services = Service::all();
 
         return view('site.service', compact('services'));
     }
-    public function serviceDesc($id){
+    public function serviceDesc($id)
+    {
         $service = Service::find($id);
-        return view("site.service-details", compact('service'));
+        return view("site.service-desc", compact('service'));
     }
-    public function courseDesc($id){
+    public function courseDesc($id)
+    {
         $course = Course::find($id);
-        return view("site.course-details", compact('course'));
+        return view("site.course-desc", compact('course'));
     }
     public function course()
     {

@@ -11,11 +11,17 @@ class Course extends Model
     protected $table = 'courses';
 
     protected $fillable = [
-        'name','desc','image'
+        'name',
+        'desc',
+        'image'
     ];
 
     public function students()
     {
         return $this->hasMany(Student::class);
+    }
+    public function details()
+    {
+        return $this->hasMany(CourseDetail::class);
     }
 }
