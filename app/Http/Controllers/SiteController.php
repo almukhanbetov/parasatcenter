@@ -31,11 +31,16 @@ class SiteController extends Controller
         $service = Service::find($id);
         return view("site.service-details", compact('service'));
     }
+    public function courseDesc($id){
+        $course = Course::find($id);
+        return view("site.course-details", compact('course'));
+    }
     public function course()
     {
         $courses = Course::all();
         return view('site.course', compact('courses'));
     }
+
 
     public function contact()
     {

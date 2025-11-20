@@ -20,7 +20,7 @@ Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/about', [SiteController::class, 'about'])->name('site.about');
 Route::get('/service', [SiteController::class, 'service'])->name('site.service');
 Route::get('/site/service/{service}', [SiteController::class, 'serviceDesc'])->name('site.service.desc');
-Route::get('/course/{kind}', [SiteController::class, 'courseKind'])->name('site.course.kind');
+Route::get('/site/course/{course}', [SiteController::class, 'courseDesc'])->name('site.course.desc');
 Route::get('/course', [SiteController::class, 'course'])->name('site.course');
 Route::get('/contact', [SiteController::class, 'contact'])->name('site.contact');
 Route::get('/search', [SiteController::class, 'search'])->name('site.search');
