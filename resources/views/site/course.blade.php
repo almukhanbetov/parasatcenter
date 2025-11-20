@@ -9,11 +9,11 @@
                 <p class="text-muted">Выберите направление, чтобы узнать подробнее о курсах</p>
             </div>
 
-        <div class="row g-4">
-            @forelse($courses as $course)
-                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-                    <div class="service-item position-relative text-white text-center rounded-4 overflow-hidden shadow-sm"
-                         style="height: 320px; background: url('{{ asset('storage/courses/'.course->image) }}') center/cover no-repeat; transition: all 0.4s ease; cursor: pointer;">
+            <div class="row g-4">
+                @forelse($courses as $course)
+                    <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                        <div class="service-item position-relative text-white text-center rounded-4 overflow-hidden shadow-sm"
+                            style="height: 320px; background: url('{{ asset('storage/courses/' . $course->image) }}') center/cover no-repeat; transition: all 0.4s ease; cursor: pointer;">
 
                             <!-- Полупрозрачное затемнение -->
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100"
