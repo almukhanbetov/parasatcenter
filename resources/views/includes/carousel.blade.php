@@ -11,7 +11,7 @@
                             <p class="fs-5 fw-medium text-white mb-4 pb-3">
                                 Квалификации специалистов, педагогов и преподавателей вузов.
                             </p>
-                            <a href="tel:+77771005123" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Связаться</a>
+                            <!-- <a href="tel:+77771005123" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Связаться</a> -->
                         </div>
                     </div>
                 </div>
