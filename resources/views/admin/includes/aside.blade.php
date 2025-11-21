@@ -43,24 +43,47 @@
                      <a href="#" class="nav-link active">
                          <i class="nav-icon fas fa-tachometer-alt"></i>
                          <p>
-                             Курсы
+                             Категории курсов
                          </p>
                      </a>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
                              <a href="{{ route('admin.course.index') }}" class="nav-link">
-                                 <p>Все курсы</p>
+                                 <p>Все категории</p>
                              </a>
                          </li>
                      </ul>
                      <ul class="nav nav-treeview">
                          <li class="nav-item">
                              <a href="{{ route('admin.course.create') }}" class="nav-link">
+                                 <p>Добавить категорию курса</p>
+                             </a>
+                         </li>
+                     </ul>
+                 </li>
+                 <li class="nav-item menu-open">
+                     <a href="#" class="nav-link active">
+                         <i class="nav-icon fas fa-tachometer-alt"></i>
+                         <p>
+                             Курсы
+                         </p>
+                     </a>
+                     <ul class="nav nav-treeview">
+                         <li class="nav-item">
+                             <a href="{{ route('admin.course-detail.index') }}" class="nav-link">
+                                 <p>Все курсы</p>
+                             </a>
+                         </li>
+                     </ul>
+                     <ul class="nav nav-treeview">
+                         <li class="nav-item">
+                             <a href="{{ route('admin.course-detail.create') }}" class="nav-link">
                                  <p>Добавить курс</p>
                              </a>
                          </li>
                      </ul>
                  </li>
+
                  <li class="nav-item menu-open">
                      <a href="#" class="nav-link active">
                          <i class="nav-icon fas fa-tachometer-alt"></i>

@@ -45,6 +45,15 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch("/{course}", \App\Http\Controllers\Admin\Course\UpdateController::class)->name('admin.course.update');
         Route::delete("/{course}", \App\Http\Controllers\Admin\Course\DeleteController::class)->name('admin.course.destroy');
     });
+    Route::group(['prefix' => 'course-detail'], function () {
+        Route::get('/', App\Http\Controllers\Admin\CourseDetail\IndexController::class)->name('admin.course-detail.index');
+        Route::post('/', App\Http\Controllers\Admin\CourseDetail\StoreController::class)->name('admin.course-detail.store');
+        Route::get('/create', App\Http\Controllers\Admin\CourseDetail\CreateController::class)->name('admin.course-detail.create');
+        Route::get("/{courseDetail}", \App\Http\Controllers\Admin\CourseDetail\ViewController::class)->name('admin.course-detail.view');
+        Route::get("/{courseDetail}/edit", \App\Http\Controllers\Admin\CourseDetail\EditController::class)->name('admin.course-detail.edit');
+        Route::patch("/{courseDetail}", \App\Http\Controllers\Admin\CourseDetail\UpdateController::class)->name('admin.course-detail.update');
+        Route::delete("/{courseDetail}", \App\Http\Controllers\Admin\CourseDetail\DeleteController::class)->name('admin.course-detail.destroy');
+    });
 
     Route::group(['prefix' => 'service'], function () {
         Route::get('/', App\Http\Controllers\Admin\Service\IndexController::class)->name('admin.service.index');

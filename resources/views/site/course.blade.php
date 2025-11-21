@@ -23,16 +23,20 @@
                             <!-- Контент карточки -->
                             <div class="position-absolute bottom-0 start-0 w-100 p-4"
                                 style="background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));">
-                                <h5 class="fw-semibold mb-3 text-uppercase text-white"
-                                    style="letter-spacing: 0.5px; font-size: 1rem;">
-                                    {{ \Illuminate\Support\Str::words($course->name, 13, '...') }}
-                                </h5>
+                                <a href="1">
+                                    <h5 class="fw-semibold mb-3 text-uppercase text-white"
+                                        style="letter-spacing: 0.5px; font-size: 1rem;">
+                                        {{ \Illuminate\Support\Str::words($course->name, 13, '...') }}
+                                    </h5>
+
+                                </a>
+
                                 <a href="{{ route('site.course.desc', $course) }}"
                                     class="btn btn-outline-light btn-sm px-3 py-2 rounded-pill fw-medium"
                                     style="transition: all 0.3s ease;text-shadow:
-                              0 0 2px rgba(0,0,0,0.7),
-                              0 0 4px rgba(0,0,0,0.7),
-                              0 2px 4px rgba(0,0,0,0.5);">
+                                        0 0 2px rgba(0,0,0,0.7),
+                                        0 0 4px rgba(0,0,0,0.7),
+                                        0 2px 4px rgba(0,0,0,0.5);">
                                     Подробнее <i class="fa fa-arrow-right ms-1"></i>
                                 </a>
                             </div>
