@@ -10,9 +10,8 @@ use Illuminate\Http\Request;
 class DeleteController extends Controller
 {
     public function __invoke(CourseDetail $course)
-    {
-       
-        dd($course);
+    {      
+    
         $course->delete();
 
         return redirect()->route('admin.course-detail.index')->with('success', 'Курс успешно удален');
