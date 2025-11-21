@@ -35,13 +35,16 @@
                             <th style="width: 10%">
                                 Сертификат
                             </th>
-                            <th style="width: 20%">
+                            <th style="width: 15%">
                                 ИИН
                             </th>
-                            <th style="width: 10%">
+                            <th style="width: 20%">
                                 Курс
                             </th>
-                            <th style="width: 20%" class="text-center">
+                            <th style="width: 20%">
+                                Фирма
+                            </th>
+                            <th style="width: 15%" class="text-right">
                                 Действия
                             </th>
                         </tr>
@@ -57,18 +60,18 @@
                                 </td>
                                 <td>
                                     <iframe src="{{ asset('/storage/students/' . $student->image) }}"
-                                            alt="{{ $student->name ?? '' }}" height="60" width="60"></iframe>
+                                        alt="{{ $student->name ?? '' }}" height="60" width="60"></iframe>
                                 </td>
                                 <td>
                                     {{ $student->iin }}
                                 </td>
                                 <td>
                                     {{ Str::limit($student->course?->name ?? '', 30, '...') }}
-                                </td>                              
+                                </td>
                                 <td>
-                                     {{ $student->firm_id ?? '' }}
-                                </td>                              
-                               
+                                    {{ $student->firm->name ?? '' }}
+                                </td>
+
                                 <td class="project-actions text-right">
                                     <a class="btn btn-primary btn-sm" href="{{ route('admin.student.view', $student) }}">
                                         <i class="fas fa-folder">
