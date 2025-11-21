@@ -17,15 +17,15 @@
 
                             <!-- Полупрозрачное затемнение -->
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100"
-                                style="transition: background 0.4s ease; background: rgba(0,0,0,0.3);">
+                                style="transition: background 0.4s ease; background: #32c36c;">
                             </div>
 
                             <!-- Контент карточки -->
-                            <div class="position-absolute bottom-0 start-0 w-100 p-4"
-                                style="background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));">
+                            <div class="position-absolute bottom-0 start-0 w-100 p-4 course-text"
+                                style="background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));">
                                
-                                    <h5 class="fw-semibold mb-3 text-uppercase text-white"
-                                        style="letter-spacing: 0.5px; font-size: 1rem;">
+                                    <h5 class="fw-semibold mb-3 text-uppercase course-text"
+                                        style="letter-spacing: 0.5px; font-size: 1rem; color:#fff;">
                                         
                                            {{ \Illuminate\Support\Str::words($course->title, 13, '...') }}
                                     </h5>

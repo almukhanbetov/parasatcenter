@@ -638,7 +638,7 @@
 
 .service-item h5,
 .service-item h4 {
-    color: #FFD700 !important;
+    color: #FFF !important;
     font-weight: 700;
     text-shadow:
         /* Тонкая чёрная обводка по контуру */
@@ -748,6 +748,7 @@ button.toggle-btn:hover {
 .text-black{
     color: #000;
 }
+
 
 
 
