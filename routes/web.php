@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\CourseDetailController;
 
 Route::middleware("guest")->group(function () {
     Route::get('/login', [\App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login');
@@ -21,6 +22,11 @@ Route::get('/about', [SiteController::class, 'about'])->name('site.about');
 Route::get('/service', [SiteController::class, 'service'])->name('site.service');
 Route::get('/site/service/{service}', [SiteController::class, 'serviceDesc'])->name('site.service.desc');
 Route::get('/site/course/{course}', [SiteController::class, 'courseDesc'])->name('site.course.desc');
+
+Route::get('/courseDetail/courses/{detail}', [CourseDetailController::class, 'index'])->name('courseDetail.courses.detail');
+Route::get('/courseDetail/{detail}', [CourseDetailController::class, 'show'])->name('courseDetail.show');
+
+
 Route::get('/course', [SiteController::class, 'course'])->name('site.course');
 Route::get('/contact', [SiteController::class, 'contact'])->name('site.contact');
 Route::get('/search', [SiteController::class, 'search'])->name('site.search');
@@ -64,8 +70,6 @@ Route::group(['prefix' => 'admin'], function () {
         Route::patch("/{service}", \App\Http\Controllers\Admin\Service\UpdateController::class)->name('admin.service.update');
         Route::delete("/{service}", \App\Http\Controllers\Admin\Service\DeleteController::class)->name('admin.service.destroy');
     });
-
-
     Route::group(['prefix' => 'user'], function () {
         Route::get('/', App\Http\Controllers\Admin\User\IndexController::class)->name('admin.user.index');
         Route::post('/', App\Http\Controllers\Admin\User\StoreController::class)->name('admin.user.store');

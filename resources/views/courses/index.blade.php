@@ -1,5 +1,5 @@
 @extends('layouts.site')
-@section('title', 'Курсы')
+@section('title', 'О курсах подробнее')
 @section('content')
 
     <div class="container-xxl py-5">
@@ -10,10 +10,10 @@
             </div>
 
             <div class="row g-4">
-                @forelse($courses as $course)
+                @forelse($course->details as $course)
                     <div class="col-md-6 col-lg-4 d-flex justify-content-center">
                         <div class="service-item position-relative text-white text-center rounded-4 overflow-hidden shadow-sm"
-                            style="height: 320px; background: url('{{ asset('storage/courses/' . $course->image) }}') center/cover no-repeat; transition: all 0.4s ease; cursor: pointer;">
+                            style="height: 200px; ">
 
                             <!-- Полупрозрачное затемнение -->
                             <div class="overlay position-absolute top-0 start-0 w-100 h-100"
@@ -23,15 +23,16 @@
                             <!-- Контент карточки -->
                             <div class="position-absolute bottom-0 start-0 w-100 p-4"
                                 style="background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));">
-                                <a href="{{ route('courseDetail.courses.detail', $course->id) }}">
+                               
                                     <h5 class="fw-semibold mb-3 text-uppercase text-white"
                                         style="letter-spacing: 0.5px; font-size: 1rem;">
-                                        {{ \Illuminate\Support\Str::words($course->name, 13, '...') }}
+                                        
+                                           {{ \Illuminate\Support\Str::words($course->title, 13, '...') }}
                                     </h5>
 
-                                </a>
+                               
 
-                                <a href="{{ route('site.course.desc', $course) }}"
+                                <a href="{{ route('courseDetail.show', $course->id) }}"
                                     class="btn btn-outline-light btn-sm px-3 py-2 rounded-pill fw-medium"
                                     style="transition: all 0.3s ease;text-shadow:
                                         0 0 2px rgba(0,0,0,0.7),
