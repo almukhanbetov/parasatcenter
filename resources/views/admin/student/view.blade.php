@@ -16,14 +16,13 @@
     <section class="content">
 
         <!-- Default box -->
-        <div class="card card-solid">
+        {{-- <div class="card card-solid">
             <div class="card-body">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <h3 class="d-inline-block d-sm-none">{{ $service->name }}</h3>
+                        <h3 class="d-inline-block d-sm-none">{{ $student->fio }}</h3>
                         <div class="col-12">
-                            <img src="{{ asset('storage/courses/' . $service->image) }}" class="product-image"
-                                alt="Product Image">
+                            <img src="{{ asset('storage/courses/' . $service->image) }}" class="product-image" alt="Product Image">
                         </div>
                         <div class="col-12 product-image-thumbs">
                         </div>
@@ -37,7 +36,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 
 
