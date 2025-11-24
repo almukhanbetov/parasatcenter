@@ -3,8 +3,8 @@
     <!-- Логотип -->
     <a href="{{ route('admin.service.index') }}" class="brand-link">
         <img src="{{ asset('assets/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
-             class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+            class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Админка</span>
     </a>
 
     <div class="sidebar">
@@ -31,15 +31,17 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('admin.service.index') }}"
-                               class="nav-link {{ request()->routeIs('admin.service.index') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Все услуги</p>
+                                class="nav-link {{ request()->routeIs('admin.service.index') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Все услуги</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('admin.service.create') }}"
-                               class="nav-link {{ request()->routeIs('admin.service.create') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Добавить услугу</p>
+                                class="nav-link {{ request()->routeIs('admin.service.create') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Добавить услугу</p>
                             </a>
                         </li>
                     </ul>
@@ -56,15 +58,17 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('admin.course.index') }}"
-                               class="nav-link {{ request()->routeIs('admin.course.index') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Все категории</p>
+                                class="nav-link {{ request()->routeIs('admin.course.index') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Все категории</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('admin.course.create') }}"
-                               class="nav-link {{ request()->routeIs('admin.course.create') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Добавить категорию курса</p>
+                                class="nav-link {{ request()->routeIs('admin.course.create') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Добавить категорию курса</p>
                             </a>
                         </li>
                     </ul>
@@ -73,7 +77,8 @@
 
                 <!-- ====================== Курсы ======================= -->
                 <li class="nav-item {{ request()->routeIs('admin.course-detail.*') ? 'menu-open' : '' }}">
-                    <a href="#" class="nav-link {{ request()->routeIs('admin.course-detail.*') ? 'active' : '' }}">
+                    <a href="#"
+                        class="nav-link {{ request()->routeIs('admin.course-detail.*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-book"></i>
                         <p>Курсы<i class="right fas fa-angle-left"></i></p>
                     </a>
@@ -81,15 +86,17 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('admin.course-detail.index') }}"
-                               class="nav-link {{ request()->routeIs('admin.course-detail.index') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Все курсы</p>
+                                class="nav-link {{ request()->routeIs('admin.course-detail.index') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Все курсы</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('admin.course-detail.create') }}"
-                               class="nav-link {{ request()->routeIs('admin.course-detail.create') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Добавить курс</p>
+                                class="nav-link {{ request()->routeIs('admin.course-detail.create') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Добавить курс</p>
                             </a>
                         </li>
                     </ul>
@@ -106,15 +113,17 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('admin.student.index') }}"
-                               class="nav-link {{ request()->routeIs('admin.student.index') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Все студенты</p>
+                                class="nav-link {{ request()->routeIs('admin.student.index') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Все студенты</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('admin.student.create') }}"
-                               class="nav-link {{ request()->routeIs('admin.student.create') ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i><p>Добавить студента</p>
+                                class="nav-link {{ request()->routeIs('admin.student.create') ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Добавить студента</p>
                             </a>
                         </li>
                     </ul>

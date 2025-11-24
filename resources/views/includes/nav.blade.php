@@ -22,10 +22,15 @@
             @if(auth()->user()->role === 'admin')
                 <a href="{{ route('admin.index') }}" class="nav-item nav-link">АДМИН</a>
             @endif
-            <a href="{{route('logout')}}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
-                Выход - ({{auth()->user()->name}})
-            </a>
+            <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                @csrf
+                <button class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" style="cursor:pointer;">
+                    Выход
+                </button>
+            </form>           
         @endauth
+            
+
         @guest('web')
             <a href="{{route('site.student')}}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Войти</a>
 {{--            <a href="{{route('site.student')}}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"><img--}}

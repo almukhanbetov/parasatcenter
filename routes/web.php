@@ -13,7 +13,7 @@ Route::middleware("guest")->group(function () {
     Route::post('/register_store', [\App\Http\Controllers\AuthController::class, 'register'])->name('register_store');
 });
 Route::middleware('auth')->group(function () {
-    Route::get('logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
+    Route::post('logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
     Route::get('/student', [SiteController::class, 'student'])->name('site.student');
     Route::get('/studentShow/{student}', [SiteController::class, 'studentShow'])->name('site.student.show');
 });
