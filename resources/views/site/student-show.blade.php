@@ -45,6 +45,7 @@
 
     </div>
 </div>
+<<<<<<< HEAD
     {{-- <div class="container my-5">
         <div class="row justify-content-center g-4">
             <!-- Карточка PDF -->
@@ -63,4 +64,7 @@
             </div>     
         </div> 
     </div>              --}}
+=======
+
+>>>>>>> 0cfd5e6716101625ffb42a982cfabd50cfb7cdc3
 @endsection
