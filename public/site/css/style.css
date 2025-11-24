@@ -792,3 +792,37 @@ button.toggle-btn:hover {
 .service-icon i {
     transition: all 0.3s ease;
 }
+
+.album-pdf-container {
+    width: 106vw;
+    max-width: 1000px;
+    height: 76vh;
+    min-height: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: transparent; /* убираем любой фон */
+}
+
+.album-pdf {
+    width: 125vh;           /* высота → ширина */
+    height: 96vw;          /* ширина → высота */
+    max-width: 1400px;
+    transform: rotate(90deg);      /* название вверху */
+    transform-origin: center center;
+    border: none !important;
+    border-radius: 18px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.22);
+}
+
+/* На мобильных — обычная вертикальная ориентация */
+@media (max-width: 992px) {
+    .album-pdf {
+        width: 100% !important;
+        height: 80vh !important;
+        transform: rotate(0deg) !important;
+        border-radius: 14px;
+    }
+    .album-pdf-container { height: 80vh; }
+}
