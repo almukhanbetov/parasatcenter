@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CourseDetailController;
+use App\Http\Controllers\FeedbackController;
 
 Route::middleware("guest")->group(function () {
     Route::get('/login', [\App\Http\Controllers\AuthController::class, 'showLoginForm'])->name('login');
@@ -30,6 +31,7 @@ Route::get('/courseDetail/{detail}', [CourseDetailController::class, 'show'])->n
 Route::get('/course', [SiteController::class, 'course'])->name('site.course');
 Route::get('/contact', [SiteController::class, 'contact'])->name('site.contact');
 Route::get('/search', [SiteController::class, 'search'])->name('site.search');
+Route::post('/feedback', [FeedbackController::class, 'send'])->name('feedback.send');
 
 // Route::get('/document', [\App\Http\Controllers\ProgramController::class, 'index'])->name('document.index')->middleware('auth');
 // Route::delete('/programs/{document}', [\App\Http\Controllers\ProgramController::class, 'destroy'])->name('programs.destroy')->middleware('auth','is_admin');
