@@ -816,6 +816,7 @@ button.toggle-btn:hover {
     box-shadow: 0 30px 70px rgba(0,0,0,0.22);
 }
 
+
 /* На мобильных — обычная вертикальная ориентация */
 @media (max-width: 992px) {
     .album-pdf {
