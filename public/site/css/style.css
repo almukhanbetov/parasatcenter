@@ -801,7 +801,7 @@ button.toggle-btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
     background: transparent; /* убираем любой фон */
 }
 
