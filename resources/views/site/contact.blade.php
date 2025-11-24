@@ -32,13 +32,7 @@
                                             <strong style="color: red">{{ $message }}</strong>
                                         @enderror
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="">
-                                        <label for="subject"></label>
-                                    </div>
-                                </div>
+                                </div>                             
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control" placeholder="" id="message" name="message" style="height: 100px">{{ old('message') }}</textarea>
