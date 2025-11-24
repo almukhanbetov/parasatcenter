@@ -17,18 +17,23 @@ class FeedbackController extends Controller
             'email'   => 'required|email',
             'message' => 'required|string',
         ]);
-        // --- Отправка WhatsApp администратору ---
-        $phone = '77077801011'; // твой номер без +
-        $apikey = 'API_KEY_ОТСЮДА';
-        $text = urlencode("Новое сообщение с сайта:
-        Имя: {$data['name']}
-        Email: {$data['email']}
-        Сообщение: {$data['message']}");
+        //     $phone = '77013801011'; // твой номер без +
+        //     $apikey = 'API_KEY_ОТСЮДА'; // вставь сюда ключ, который вернёт CallMeBot
 
-    file_get_contents("https://api.callmebot.com/whatsapp.php?phone=$phone&text=$text&apikey=$apikey");
+        //     $message = "
+        //     📩 *Новое сообщение с сайта Parasat Center*\n
+        //     👤 *Имя:* {$data['name']}\n
+        //     📧 *Email:* {$data['email']}\n
+        //     💬 *Сообщение:* {$data['message']}\n
+        //     🕒 Время: " . now()->format('Y-m-d H:i') . "
+        //     ";
+
+        // $text = urlencode($message);
+
+        // file_get_contents("https://api.callmebot.com/whatsapp.php?phone=$phone&text=$text&apikey=$apikey");
 
 
-        Mail::to('almuko.m@gmail.com')->send(new FeedbackMail($data));
+        Mail::to('ruc.parasat@mail.ru')->send(new FeedbackMail($data));
 
 
         return back()->with('success', 'Ваше сообщение отправлено!');

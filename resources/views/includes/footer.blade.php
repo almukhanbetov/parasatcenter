@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            {{-- <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-4"></h5>
                 <p></p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
@@ -56,7 +56,7 @@
                     <button type="button"
                         class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Отправить</button>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="container">
