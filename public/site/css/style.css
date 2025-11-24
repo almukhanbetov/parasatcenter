@@ -796,7 +796,7 @@ button.toggle-btn:hover {
 .album-pdf-container {
     width: 96vw;
     max-width: 1000px;
-    height: 76vh;
+    height: 66vh;
     min-height: 560px;
     display: flex;
     justify-content: center;
@@ -807,7 +807,7 @@ button.toggle-btn:hover {
 
 .album-pdf {
     width: 110vh;           /* высота → ширина */
-    height: 86vw;          /* ширина → высота */
+    height: 76vw;          /* ширина → высота */
     max-width: 1000px;
     transform: rotate(90deg);      /* название вверху */
     transform-origin: center center;
