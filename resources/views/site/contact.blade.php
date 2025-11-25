@@ -12,12 +12,12 @@
                         <!--<p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>-->
                         <form action="{{ route('feedback.send') }}" method="POST">
                             @csrf
-                            <div class="row g-3">
+                            <div class="row g-3 ">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder=""
+                                        <input type="text" class="form-control " id="name" placeholder="Имя"
                                             name="name" value="{{ old('name') }}">
-                                        <label for="name"></label>
+                                        <label for="name">Имя</label>
                                         @error('name')
                                             <strong style="color: red">{{ $message }}</strong>
                                         @enderror
@@ -26,8 +26,8 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="email" name="email"
-                                            value="{{ old('email') }}" placeholder="">
-                                        <label for="email"></label>
+                                            value="{{ old('email') }}" placeholder="Электронная почта">
+                                        <label for="email">Электронная почта</label>
                                         @error('email')
                                             <strong style="color: red">{{ $message }}</strong>
                                         @enderror
@@ -35,8 +35,8 @@
                                 </div>                             
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="" id="message" name="message" style="height: 100px">{{ old('message') }}</textarea>
-                                        <label for="message"></label>
+                                        <textarea class="form-control" placeholder="Сообщение" id="message" name="message" style="height: 100px">{{ old('message') }}</textarea>
+                                        <label for="message">Сообщение</label>
                                         @error('message')
                                             <strong style="color: red">{{ $message }}</strong>
                                         @enderror
